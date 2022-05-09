@@ -1,4 +1,3 @@
-markdown: redcarpet
-markdown: redcarpet
+markdown: kramdown
 baseurl: /jekyll-netlifycms
 exclude: ['README.md']

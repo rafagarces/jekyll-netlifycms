@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jekyll Netlify</title>
-<link rel="stylesheet" href="{{site.baseurl}}/src/css/styles.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/src/css/styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Name of the website</h1>
-        {% include nav.html %}
-    </header>
+<header>
+    <h1>Name of the website</h1>
+    {% include nav.html navclass="nav-header" %}
+</header>
 
-    {{content}}
-    {% include footer.html %}
+{{content}}
+
+<footer>
+    {% include nav.html navclass="nav-footer" %}
+    <p>© 2022 Footer text</p>
+</footer>
 
 </body>
 </html>
