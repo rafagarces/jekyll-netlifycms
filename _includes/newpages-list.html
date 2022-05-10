@@ -1,0 +1,11 @@
+<ul>
+    {% for newpages in site.pages %}
+        {% if newpages.type == include.type %}
+        <li>
+            <img src="{{site.baseurl}}/src/img/{{newpages.image}}" alt="Photo of {{newpages.name}}">
+            {{newpages.title}}
+            <p>{{newpages.meta}}</p>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>

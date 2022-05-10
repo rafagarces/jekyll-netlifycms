@@ -1,17 +1,13 @@
 ---
 layout: default
 ---
-
 <h1>New Page Headline</h1>
 
-<h2>One</h2>
+<h2>One Pages</h2>
+{% include newpages-list.html type='one' %}
 
-<ul>
-    {% for newpages in site.pages %}
-        {% if newpages.category == 'newpage' %}
-        <li>
-            {{newpages.title}}
-        </li>
-        {% endif %}
-    {% endfor %}
-</ul>
+<h2>Two Pages</h2>
+{% include newpages-list.html type='two'%}
+
+<h2>Three Pages</h2>
+{% include newpages-list.html type='three'%}
