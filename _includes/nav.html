@@ -6,6 +6,11 @@
             Home</a>
         </li>
         <li>
+            <a href="{{site.baseurl}}/newpage/" 
+            class="{% if page.url contains 'newpage' %}current{% endif %}">
+            New Page</a>
+        </li>   
+        <li>
             <a href="{{site.baseurl}}/news.html" 
             class="{% if page.url contains 'news' or page.url contains 'recently-discovered' %} current {% endif %}">
             News</a>

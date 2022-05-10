@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1>New Page Headline</h1>
+
+<h2>One</h2>
+
+<ul>
+    {% for newpages in site.pages %}
+        {% if newpages.category == 'newpage' %}
+        <li>
+            {{newpages.title}}
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>
