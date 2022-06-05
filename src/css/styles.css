@@ -41,3 +41,8 @@ footer, header, hgroup, menu, nav, section {
 .nav-header {
     font-size: 1.25rem;
 }
+
+.thumbnail{
+    width: auto;
+    height: 40px;
+}

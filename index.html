@@ -5,23 +5,4 @@ layout: default
 <h1>Hello World</h1>
 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, maxime quisquam error sunt voluptas amet eligendi unde animi, officia earum aut accusamus exercitationem, doloribus blanditiis? Rem quibusdam maiores explicabo quas.</p>
 
-<h2>Type of Posts</h2>
-<ol>
-    {% for post in site.data.post-types %}
-    <li>
-        <a href="#">{{post.title}}</a>
-        {{post.content | markdownify }}
-    </li>
-    {% endfor %}
-</ol>
-
-<h2>Recent Discovered News</h2>
-<ul>
-    {% for news in site.categories.recently-discovered limit:2 %}
-    <li>
-        <a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a>
-        <p>{{news.meta}}</p>
-        <p>{{news.category}}</p>
-    </li>
-    {% endfor %}
-</ul>
+{% include projects-table.html %}

@@ -1,0 +1,14 @@
+
+<ul>
+    {% for project in site.categories.project %}
+    <li>
+        <a href="{{site.baseurl}}{{project.url}}">
+            <img src="{{site.baseurl}}/src/img/{{project.image}}" alt="Photo of {{project.title}}">
+            <h3>{{project.title}}</h3>
+        </a>
+        <p>{{project.brief}}</p>
+        <p>{{project.year}}</p>
+        <img class="thumbnail" src="{{site.baseurl}}/src/img/{{project.thumbnail}}">
+    </li>
+    {% endfor %}
+</ul>
